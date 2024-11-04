@@ -44,7 +44,7 @@ function switchCards() {
     palavra.innerHTML = "Arte";
     palavra.style.color = "#ab643add";
     
-    isFilm = false;
+    isGhibli = false;
     return;
   }
   document.body.style.background = "linear-gradient(to bottom, #C6426E, #642B73)";
@@ -76,7 +76,7 @@ function switchCards() {
 
   palavra.innerHTML = "Ghibli"
   palavra.style.color = "#C6426E"
-  isFilm = true;
+  isGhibli = true;
 
 }
 

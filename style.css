@@ -59,14 +59,14 @@ body {
   perspective: 1200px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translatez(0px);
+  transform: translatez(10px);
   transition: transform 200ms ease-out;
   width: 175px;
   text-align: center;
   
    &:hover {
      box-shadow: 5px 5px 20px -7px rgba(0,0,0,0.5);
-    transform: translatez(60px);
+    transform: translatez(40px);
    }
   
   &:not(:last-child) {
@@ -77,6 +77,7 @@ body {
 .card__img {
   position: relative;
   height: 100%;
+  transform: translateZ(60px);
 }
 
 .card__bg {
@@ -86,7 +87,7 @@ body {
   right: -50px;
   top: -50px;
   transform-origin: 50% 50%;
-  transform: translateZ(0px);
+  transform: translateZ(20px);
   z-index: 0;
 }
 
@@ -185,6 +186,7 @@ body {
   padding: 30px 35px;
   text-align: left;
   color: #3e3e42;
+  z-index: 10;  
 
 }
 
