@@ -1,5 +1,3 @@
-html, body { height: 100%}
-
 body {
 
   display: flex;
@@ -13,6 +11,7 @@ body {
   margin: 0 20px;
   flex-direction: column;
   gap: 10vh;
+  height: 100vh;
 }
 
 .tituloCards {
@@ -22,6 +21,8 @@ body {
   letter-spacing: -1px;
   margin-bottom: 2vh;
   padding: 0;
+  padding-left: 1vw;
+  padding-top: 0.5vh;
   transform: translateZ(50px);
 }
 
@@ -30,6 +31,7 @@ body {
   font-size: 2rem;
   margin-bottom: 2vh;
   transform: translateZ(30px);
+  padding-left: 2vw;
 }
 
 .cards {
@@ -49,6 +51,8 @@ body {
   min-width: 595px;
 }
 
+
+
 .card {
   border-radius: 15px;
   box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.6);
@@ -64,14 +68,16 @@ body {
   width: 175px;
   text-align: center;
   
-   &:hover {
-     box-shadow: 5px 5px 20px -7px rgba(0,0,0,0.5);
-    transform: translatez(40px);
-   }
-  
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+}
+.card:not(:last-child)
+{
+  margin-right: 30px;
+}
+
+.card:hover
+{
+  box-shadow: 5px 5px 20px -7px rgba(0,0,0,0.5);
+  transform: translatez(40px);
 }
 
 .card__img {
@@ -91,16 +97,17 @@ body {
   z-index: 0;
 }
 
-.card__one {
-  .card__img {
-    top: 14px;
-    right: 30px;
-    height: 110%;
-  }
-  .card__bg {
-    background: url('./assets/background1.png') center / cover no-repeat;
-    filter: blur(3px);
-  }
+.card__one > .card__img
+{
+  top: 14px;
+  right: 30px;
+  height: 110%;
+}
+
+.card__one > .card__bg
+{
+  background: url('./assets/background1.png') center / cover no-repeat;
+  filter: blur(3px);
 }
 
 .card__one:hover{
@@ -112,18 +119,18 @@ body {
   }
 }
 
-.card__two { 
-  .card__img {
+.card__two > .card__img 
+{ 
     scale: 120%;
     top: 3vh;
-  }
-  .card__bg {
-    background: url('./assets/background2.png') center / cover no-repeat;
-    filter: brightness(120%) blur(3px);
-  }
-
-
 }
+.card__two > .card__bg 
+{ 
+  background: url('./assets/background2.png') center / cover no-repeat;
+  filter: brightness(120%) blur(3px);
+}
+
+
 .card__two:hover {
   .card__text{
     transition: 0.5s;
@@ -131,6 +138,7 @@ body {
 
   }
 }
+
 
 .card__three {
   .card__img {
@@ -198,10 +206,3 @@ body {
 }
 
 
-.radio
-{
-    color: #3e3e42;
-    font-size: 6em;
-    align-items: baseline;
-
-}
