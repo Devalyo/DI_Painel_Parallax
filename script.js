@@ -10,13 +10,13 @@ const img2 = images.item(1);
 const img3 = images.item(2);
 
 const ghibli = document.querySelector("#ghibli");
-var isFilm = false;
+var isGhibli = false;
 
 let timeout;
 
 function switchCards() {
   
-  if (isFilm) {
+  if (isGhibli) {
     document.body.style.background = "linear-gradient(to bottom, #ac843e, #5c4735)";
 
     img1.src="./assets/gogh.png"
