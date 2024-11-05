@@ -110,13 +110,11 @@ body {
   filter: blur(3px);
 }
 
-.card__one:hover{
+.card__one:hover > .card__text {
 
-  .card__text 
-  {
     transition: 0.5s;
     background-color: #254b60c6;
-  }
+  
 }
 
 .card__two > .card__img 
@@ -131,34 +129,32 @@ body {
 }
 
 
-.card__two:hover {
-  .card__text{
-    transition: 0.5s;
-    background-color: #0f341fc6;
-
-  }
-}
-
-
-.card__three {
-  .card__img {
-    top: 5px;
-    left: -1vw;
-    height: 110%;
-  }
-  .card__bg {
-    background: url('./assets/background3.png') center / cover no-repeat;
-    filter: blur(3px) brightness(70%);
-  }
-}
-.card__three:hover
+.card__two:hover  > .card__text
 {
+  transition: 0.5s;
+  background-color: #0f341fc6;
 
-  .card__text 
-  {
-    transition: 0.5s;
-    background-color: #3e2222b9;
-  }
+}
+
+
+.card__three > .card__img
+{
+  top: 5px;
+  left: -1vw;
+  height: 110%;
+    
+}
+
+.card__three > .card__bg 
+{
+  background: url('./assets/background3.png') center / cover no-repeat;
+  filter: blur(3px) brightness(70%);
+}
+
+.card__three:hover > .card__text
+{
+  transition: 0.5s;
+  background-color: #3e2222b9;
 }
 
 
@@ -204,5 +200,3 @@ body {
   gap: 2vw;
   font-size: 6px;
 }
-
-
