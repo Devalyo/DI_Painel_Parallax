@@ -28,7 +28,7 @@ function switchCards() {
     
     img2.src="./assets/circe.png"
     img2.style.scale = "130%"
-    img2.style.top = "3vh";
+    img2.style.top = "2.5vh";
     backgrounds.item(1).style.background = "url('./assets/background2.png') center / cover no-repeat"
     backgrounds.item(1).style.filter = "brightness(120%) blur(2px)";
     textoCarta.item(1).innerHTML = "Circe Invidiosa";
