@@ -27,7 +27,7 @@ function switchCards() {
     textoCarta.item(0).innerHTML = "Gogh";
     
     img2.src="./assets/circe.png"
-    img2.style.scale = "140%"
+    img2.style.scale = "130%"
     img2.style.top = "3vh";
     backgrounds.item(1).style.background = "url('./assets/background2.png') center / cover no-repeat"
     backgrounds.item(1).style.filter = "brightness(120%) blur(2px)";
