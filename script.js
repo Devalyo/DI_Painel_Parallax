@@ -4,7 +4,7 @@ const backgrounds = document.querySelectorAll(".card__bg");
 const barrax = document.querySelector("#barraX");
 const barray = document.querySelector("#barraY");
 const barra = document.querySelector(".barra");
-const textoCarta = document.querySelectorAll(".card__text");
+const textoCarta = document.querySelectorAll(".card__title");
 const img1 = images.item(0);
 const img2 = images.item(1);
 const img3 = images.item(2);
@@ -24,12 +24,14 @@ function switchCards() {
     img1.style.right = "30px"
     backgrounds.item(0).style.background = "url('./assets/background1.png') center / cover no-repeat"
     backgrounds.item(0).style.filter = "blur(2px)";
+    textoCarta.item(0).innerHTML = "Gogh";
     
     img2.src="./assets/circe.png"
     img2.style.scale = "120%"
     img2.style.top = "3vh";
     backgrounds.item(1).style.background = "url('./assets/background2.png') center / cover no-repeat"
     backgrounds.item(1).style.filter = "brightness(120%) blur(2px)";
+    textoCarta.item(1).innerHTML = "Circe Invidiosa";
     
     img3.src="./assets/borea.png"
     img3.style.top = "5px;"
@@ -37,6 +39,7 @@ function switchCards() {
     img3.style.height = "110%"
     backgrounds.item(2).style.background = "url('./assets/background3.png') center / cover no-repeat"
     backgrounds.item(2).style.filter = "blur(0px) brightness(70%)";
+    textoCarta.item(2).innerHTML = "Borea";
     
   
     var palavra = document.querySelector(".textoCards")
@@ -54,6 +57,7 @@ function switchCards() {
   img1.style.right = "-10px"
   backgrounds.item(0).style.background = "url('./assets/background_g1.jpg') center / cover no-repeat"
   backgrounds.item(0).style.filter = "blur(0px)";
+  textoCarta.item(0).innerHTML = "Mononoke";
   
   
   
@@ -62,6 +66,7 @@ function switchCards() {
   img2.style.top = "25px";
   backgrounds.item(1).style.background = "url('./assets/background_g2.jpg') center / cover no-repeat"
   backgrounds.item(1).style.filter = "blur(0px)";
+  textoCarta.item(1).innerHTML = "Chihiro";
 
   img3.src="./assets/3dr_howlcastle.png"
   img3.style.height = "110%";
@@ -70,7 +75,8 @@ function switchCards() {
   img3.style.left = "-4px"
   backgrounds.item(2).style.background = "url('./assets/background_g3.jpg') center / cover no-repeat"
   backgrounds.item(2).style.filter = "blur(0px) brightness(100%);";
-  
+  textoCarta.item(2).innerHTML = "Howl's";
+
   var palavra = document.querySelector(".textoCards")
 
   palavra.innerHTML = "Ghibli"
