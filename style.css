@@ -19,7 +19,7 @@ body {
   font-size:32px;
   font-weight: 800;
   letter-spacing: -1px;
-  margin-bottom: 2vh;
+  margin-bottom: 2vh;Text
   padding: 0;
   padding-left: 1vw;
   padding-top: 0.5vh;
@@ -119,7 +119,7 @@ body {
 
 .card__two > .card__img 
 { 
-    scale: 140%;
+    scale: 130%;
     top: 3vh;
 }
 .card__two > .card__bg 
